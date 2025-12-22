@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background: linear-gradient(180deg, #020617, #020617);
+  background: #020617;
   color: #e5e7eb;
 }
 
@@ -143,3 +143,12 @@ body {
   padding-bottom: 30px;
   color: #64748b;
 }
+a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
