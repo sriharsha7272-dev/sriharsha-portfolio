@@ -19,6 +19,7 @@ body {
   padding: 40px 20px;
 }
 
+/* HERO */
 .hero-layout {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
@@ -51,8 +52,8 @@ body {
 }
 
 .hero-tagline {
-  color: #94a3b8;
   margin-top: 16px;
+  color: #94a3b8;
 }
 
 .hero-buttons {
@@ -77,16 +78,12 @@ body {
   color: #38bdf8;
 }
 
-.abstract-visual {
-  position: relative;
-}
-
 /* TERMINAL */
 .terminal {
   background: #020617;
   border: 1px solid #1e293b;
   border-radius: 14px;
-  box-shadow: 0 0 40px rgba(56,189,248,0.2);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.6);
 }
 
 .terminal-header {
@@ -111,11 +108,11 @@ body {
 }
 
 .terminal-body {
-  padding: 16px;
+  padding: 14px;
   font-family: monospace;
   font-size: 13px;
   color: #38bdf8;
-  min-height: 160px;
+  min-height: 120px;
 }
 
 .cursor {
@@ -147,10 +144,43 @@ body {
   margin-top: 80px;
 }
 
+.two-column {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.info-card {
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.skill-pill {
+  border: 1px solid #1e293b;
+  border-radius: 999px;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
 .job {
   border: 1px solid #1e293b;
   border-radius: 14px;
   padding: 24px;
+}
+
+.cta {
+  text-align: center;
+  border: 1px dashed #38bdf8;
+  border-radius: 12px;
+  padding: 20px;
 }
 
 .footer {
@@ -161,7 +191,8 @@ body {
 
 /* MOBILE */
 @media (max-width: 900px) {
-  .hero-layout {
+  .hero-layout,
+  .two-column {
     grid-template-columns: 1fr;
   }
 }
