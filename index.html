@@ -4,13 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pandi Sri Harsha | DevOps Engineer</title>
-  <link rel="stylesheet" href="style.css?v=26" />
+
+  <!-- Font Awesome (icons – reliable) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="stylesheet" href="style.css?v=30" />
 </head>
 
 <body>
 
 <!-- HERO -->
-<section class="hero hero-abstract">
+<section class="hero">
   <div class="container hero-layout">
 
     <div class="hero-content">
@@ -55,37 +65,32 @@
   </div>
 </section>
 
-<!-- METRICS -->
+<!-- WHAT I WORK ON -->
 <section class="section">
-  <div class="container">
-    <div class="metrics-grid">
+  <div class="container two-column">
 
-      <div class="metric-card">
-        <h2>3+</h2>
-        <p>Years Experience</p>
-      </div>
-
-      <div class="metric-card">
-        <h2>20+</h2>
-        <p>CI/CD Pipelines</p>
-      </div>
-
-      <div class="metric-card">
-        <h2>99.9%</h2>
-        <p>Service Availability</p>
-      </div>
-
-      <div class="metric-card">
-        <h2>50+</h2>
-        <p>Production Deployments</p>
-      </div>
-
-      <div class="metric-card">
-        <h2>10+</h2>
-        <p>AWS Services Used</p>
-      </div>
-
+    <div class="info-card">
+      <h3><i class="fa-solid fa-screwdriver-wrench"></i> What I Work On</h3>
+      <ul>
+        <li>CI/CD pipeline design and maintenance</li>
+        <li>AWS infrastructure & monitoring</li>
+        <li>Docker-based deployments</li>
+        <li>Automation & scripting</li>
+        <li>Production incident handling</li>
+      </ul>
     </div>
+
+    <div class="info-card">
+      <h3><i class="fa-solid fa-chart-line"></i> Production, Reliability & Operations</h3>
+      <ul>
+        <li>CloudWatch monitoring & alerts</li>
+        <li>CI/CD & infra troubleshooting</li>
+        <li>Root cause analysis (RCA)</li>
+        <li>ITSM workflows (ServiceNow)</li>
+        <li>Reliability improvements</li>
+      </ul>
+    </div>
+
   </div>
 </section>
 
@@ -94,35 +99,52 @@
   <div class="container">
     <h3>Core Skills</h3>
 
-    <!-- CLOUD -->
-    <h4 class="skill-group-title">☁️ Cloud</h4>
-    <div class="skills-cards stagger">
-      <div class="skill-card"><img src="https://cdn.simpleicons.org/amazonaws/ffffff"><span>AWS</span></div>
-      <div class="skill-card"><img src="https://cdn.simpleicons.org/amazonec2/ffffff"><span>EC2</span></div>
-      <div class="skill-card"><img src="https://cdn.simpleicons.org/amazons3/ffffff"><span>S3</span></div>
-      <div class="skill-card"><img src="https://cdn.simpleicons.org/amazoniam/ffffff"><span>IAM</span></div>
-      <div class="skill-card"><img src="https://cdn.simpleicons.org/amazonaws/ffffff"><span>CloudWatch</span></div>
+    <h4 class="skill-group-title"><i class="fa-solid fa-cloud"></i> Cloud</h4>
+    <div class="skills-cards">
+      <div class="skill-card"><i class="fa-brands fa-aws"></i><span>AWS</span></div>
+      <div class="skill-card"><i class="fa-solid fa-server"></i><span>EC2</span></div>
+      <div class="skill-card"><i class="fa-solid fa-database"></i><span>S3</span></div>
+      <div class="skill-card"><i class="fa-solid fa-user-shield"></i><span>IAM</span></div>
+      <div class="skill-card"><i class="fa-solid fa-chart-simple"></i><span>CloudWatch</span></div>
     </div>
 
-    <!-- CI/CD -->
-    <h4 class="skill-group-title">🔁 CI / CD</h4>
-    <div class="skills-cards stagger">
-      <div class="skill-card"><img src="https://cdn.simpleicons.org/jenkins/ffffff"><span>Jenkins</span></div>
-      <div class="skill-card"><img src="https://cdn.simpleicons.org/githubactions/ffffff"><span>GitHub Actions</span></div>
-      <div class="skill-card"><img src="https://cdn.simpleicons.org/docker/ffffff"><span>Docker</span></div>
-      <div class="skill-card"><img src="https://cdn.simpleicons.org/kubernetes/ffffff"><span>Kubernetes</span></div>
-      <div class="skill-card"><img src="https://cdn.simpleicons.org/terraform/ffffff"><span>Terraform</span></div>
+    <h4 class="skill-group-title"><i class="fa-solid fa-arrows-rotate"></i> CI / CD</h4>
+    <div class="skills-cards">
+      <div class="skill-card"><i class="fa-brands fa-jenkins"></i><span>Jenkins</span></div>
+      <div class="skill-card"><i class="fa-brands fa-github"></i><span>GitHub Actions</span></div>
+      <div class="skill-card"><i class="fa-brands fa-docker"></i><span>Docker</span></div>
+      <div class="skill-card"><i class="fa-solid fa-dharmachakra"></i><span>Kubernetes</span></div>
+      <div class="skill-card"><i class="fa-solid fa-cubes"></i><span>Terraform</span></div>
     </div>
 
-    <!-- OPS -->
-    <h4 class="skill-group-title">⚙️ Operations</h4>
-    <div class="skills-cards stagger">
-      <div class="skill-card"><img src="https://cdn.simpleicons.org/ansible/ffffff"><span>Ansible</span></div>
-      <div class="skill-card"><img src="https://cdn.simpleicons.org/linux/ffffff"><span>Linux</span></div>
-      <div class="skill-card"><img src="https://cdn.simpleicons.org/gnubash/ffffff"><span>Bash</span></div>
-      <div class="skill-card"><img src="https://cdn.simpleicons.org/servicenow/ffffff"><span>ServiceNow</span></div>
+    <h4 class="skill-group-title"><i class="fa-solid fa-gears"></i> Operations</h4>
+    <div class="skills-cards">
+      <div class="skill-card"><i class="fa-solid fa-play"></i><span>Ansible</span></div>
+      <div class="skill-card"><i class="fa-brands fa-linux"></i><span>Linux</span></div>
+      <div class="skill-card"><i class="fa-solid fa-terminal"></i><span>Bash</span></div>
+      <div class="skill-card"><i class="fa-solid fa-ticket"></i><span>ServiceNow</span></div>
     </div>
 
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section">
+  <div class="container">
+    <h3>Experience</h3>
+
+    <div class="job">
+      <strong>DevOps Engineer — Mogo Mantra Pvt Ltd</strong>
+      <p>March 2022 – Present | Hyderabad</p>
+      <ul>
+        <li>Designed and maintained CI/CD pipelines using Jenkins and GitHub Actions</li>
+        <li>Managed AWS infrastructure (EC2, IAM, VPC, S3, CloudWatch)</li>
+        <li>Automated deployments and operational tasks using Bash and Ansible</li>
+        <li>Handled production incidents and performed RCA</li>
+        <li>Worked with ServiceNow for incident and change management</li>
+        <li>Created runbooks, SOPs, and technical documentation</li>
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -139,14 +161,13 @@
     <h3>Contact</h3>
     <p>Email: <a href="mailto:psriharsha567@gmail.com">psriharsha567@gmail.com</a></p>
     <p>Phone: <a href="tel:+919347869813">+91 93478 69813</a></p>
-    <p>Location: India</p>
   </div>
 </section>
 
 <footer class="footer">© 2025 Pandi Sri Harsha</footer>
 
 <script>
-const terminalLines=[
+const lines=[
 "$ whoami",
 "pandi-sri-harsha",
 "",
@@ -156,8 +177,8 @@ const terminalLines=[
 "$ github",
 "github.com/sriharsha7272-dev"
 ];
-let i=0,j=0;const el=document.getElementById("terminal-text");
-function type(){if(i<terminalLines.length){if(j<terminalLines[i].length){el.textContent+=terminalLines[i][j++];setTimeout(type,40);}else{el.textContent+="\n";j=0;i++;setTimeout(type,160);}}}
+let i=0,j=0,el=document.getElementById("terminal-text");
+function type(){if(i<lines.length){if(j<lines[i].length){el.textContent+=lines[i][j++];setTimeout(type,40);}else{el.textContent+="\n";j=0;i++;setTimeout(type,160);}}}
 type();
 </script>
 
