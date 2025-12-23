@@ -38,6 +38,21 @@ a {
   align-items: center;
 }
 
+/* NAME + PHOTO */
+.name-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.name-photo {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #38bdf8;
+}
+
 .hero-content h1 {
   font-size: 44px;
 }
@@ -45,7 +60,7 @@ a {
 .hero-content h2 {
   font-size: 18px;
   color: #38bdf8;
-  margin-top: 6px;
+  margin-top: 10px;
 }
 
 .hero-tagline {
@@ -93,7 +108,7 @@ a {
 .window-header {
   display: flex;
   gap: 6px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .window-header span {
@@ -101,6 +116,18 @@ a {
   height: 10px;
   border-radius: 50%;
   background: #64748b;
+}
+
+.window-title {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 6px;
+}
+
+.github-link {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 12px;
 }
 
 .code-lines .line {
@@ -115,6 +142,7 @@ a {
 .w80 { width: 80%; }
 .w90 { width: 90%; }
 
+/* PIPELINE */
 .pipeline {
   display: flex;
   gap: 12px;
@@ -132,6 +160,7 @@ a {
   font-size: 14px;
 }
 
+/* FLOAT ANIMATION */
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-6px); }
@@ -223,5 +252,9 @@ li {
   .hero-layout,
   .two-column {
     grid-template-columns: 1fr;
+  }
+
+  .name-row {
+    justify-content: center;
   }
 }
