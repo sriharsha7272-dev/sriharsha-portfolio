@@ -22,7 +22,7 @@ a { color: #38bdf8; text-decoration: none; }
 .hero-layout {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  gap: 40px;
+  gap: 48px;
 }
 
 .hero h1 { font-size: 42px; }
@@ -54,18 +54,15 @@ a { color: #38bdf8; text-decoration: none; }
 .terminal {
   background: #020617;
   border: 1px solid #1e293b;
-  border-radius: 12px;
+  border-radius: 14px;
   padding: 16px;
   font-family: monospace;
-  min-height: 260px;
-  color: #38bdf8;
+  min-height: 200px;
   overflow-y: auto;
+  color: #38bdf8;
 }
 
-.terminal pre {
-  margin: 0;
-  white-space: pre-wrap;
-}
+.terminal pre { margin: 0; white-space: pre-wrap; }
 
 .cursor {
   animation: blink 1s infinite;
@@ -91,7 +88,7 @@ a { color: #38bdf8; text-decoration: none; }
 }
 
 .metric-card strong {
-  font-size: 28px;
+  font-size: 26px;
   color: #38bdf8;
 }
 
@@ -99,42 +96,76 @@ a { color: #38bdf8; text-decoration: none; }
 .section { margin-top: 80px; }
 h3 { font-size: 26px; margin-bottom: 20px; }
 
+/* WHAT I WORK ON */
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.work-card {
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 20px;
+  background: rgba(2,6,23,0.6);
+}
+
 /* SKILLS + EXPERIENCE */
 .skills-experience-grid {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 48px;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.skill-group {
+  margin: 24px 0 12px;
+  color: #38bdf8;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .skills-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 24px;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-.skill-card {
-  padding: 8px 14px;
+.skills-cards span {
+  padding: 6px 12px;
   border: 1px solid #1e293b;
-  border-radius: 10px;
-  background: #020617;
-  font-size: 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  color: #cbd5f5;
 }
 
 /* EXPERIENCE */
-.job p { color: #94a3b8; margin: 6px 0 10px; }
-.job ul { padding-left: 18px; }
-.job li { margin-bottom: 8px; color: #cbd5f5; }
-
-/* BLOG */
-.blog-card {
-  border: 1px solid #1e293b;
-  border-radius: 12px;
-  padding: 20px;
+.job {
+  border-left: 2px solid #1e293b;
+  padding-left: 16px;
 }
 
-/* CONTACT */
-#contact p { margin-bottom: 10px; }
+.job p {
+  color: #94a3b8;
+  margin: 6px 0 12px;
+}
+
+.job ul {
+  padding-left: 18px;
+}
+
+.job li {
+  margin-bottom: 8px;
+}
+
+/* CASE STUDIES */
+.case-card {
+  border-left: 3px solid #38bdf8;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+}
 
 /* FOOTER */
 .footer {
@@ -146,8 +177,9 @@ h3 { font-size: 26px; margin-bottom: 20px; }
 /* MOBILE */
 @media (max-width: 900px) {
   .hero-layout,
+  .metrics,
   .skills-experience-grid,
-  .metrics {
+  .work-grid {
     grid-template-columns: 1fr;
   }
 }
