@@ -6,39 +6,22 @@
 
   <!-- PRIMARY SEO -->
   <title>Pandi Sri Harsha | DevOps Engineer (AWS, CI/CD, Automation)</title>
-  <meta
-    name="description"
-    content="DevOps Engineer with 3+ years of experience in AWS cloud infrastructure, CI/CD automation, Docker deployments, and production operations. Actively looking for DevOps Engineer roles."
-  />
+  <meta name="description" content="DevOps Engineer with 3+ years of experience in AWS cloud infrastructure, CI/CD automation, Docker deployments, and production operations. Actively looking for DevOps Engineer roles." />
   <meta name="keywords" content="DevOps Engineer, AWS, CI/CD, Jenkins, GitHub Actions, Docker, CloudWatch, Automation" />
   <meta name="author" content="Pandi Sri Harsha" />
 
-  <!-- OPEN GRAPH / LINKEDIN -->
+  <!-- OPEN GRAPH -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Pandi Sri Harsha | DevOps Engineer" />
-  <meta
-    property="og:description"
-    content="DevOps Engineer with 3+ years of experience in AWS, CI/CD pipelines, Docker, and production operations."
-  />
+  <meta property="og:description" content="DevOps Engineer with 3+ years of experience in AWS, CI/CD pipelines, Docker, and production operations." />
   <meta property="og:url" content="https://sriharsha7272-dev.github.io/sriharsha-portfolio/" />
-  <meta property="og:image" content="https://sriharsha7272-dev.github.io/sriharsha-portfolio/assets/profile.jpg" />
-
-  <!-- TWITTER -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Pandi Sri Harsha | DevOps Engineer" />
-  <meta name="twitter:description" content="DevOps Engineer | AWS | CI/CD | Automation | Open to DevOps roles" />
-  <meta name="twitter:image" content="https://sriharsha7272-dev.github.io/sriharsha-portfolio/assets/profile.jpg" />
+  <meta property="og:image" content="assets/profile.jpg" />
 
   <!-- STYLES -->
-  <link rel="stylesheet" href="style.css?v=32" />
+  <link rel="stylesheet" href="style.css" />
 
   <!-- FONT AWESOME -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 
 <body>
@@ -80,7 +63,7 @@
       </div>
 
       <div class="pipeline">
-        <div class="stage">I Build</div>
+        <div class="stage">Build</div>
         <div class="stage">Test</div>
         <div class="stage">Deploy</div>
       </div>
@@ -160,41 +143,33 @@
       <strong>DevOps Engineer — Mogo Mantra Pvt Ltd</strong>
       <p>March 2022 – Present | Hyderabad</p>
       <ul>
-        <li>Designed, implemented, and maintained CI/CD pipelines using Jenkins and GitHub Actions.</li>
-        <li>Managed AWS infrastructure including EC2, IAM, VPC, S3, and CloudWatch.</li>
-        <li>Containerized applications using Docker and supported deployments.</li>
-        <li>Automated operational tasks using Bash scripting and Ansible concepts.</li>
-        <li>Monitored systems, handled production incidents, and performed RCA.</li>
-        <li>Worked with ServiceNow for incident and change management.</li>
-        <li>Created runbooks, SOPs, and technical documentation.</li>
+        <li>Designed and maintained CI/CD pipelines using Jenkins and GitHub Actions.</li>
+        <li>Managed AWS infrastructure (EC2, IAM, VPC, S3, CloudWatch).</li>
+        <li>Containerized applications using Docker.</li>
+        <li>Handled production incidents and RCA.</li>
+        <li>Worked with ServiceNow for ITSM workflows.</li>
       </ul>
     </div>
   </div>
 </section>
 
-<!-- CASE STUDIES -->
+<!-- BLOGS -->
 <section class="section">
   <div class="container">
-    <h3>Selected DevOps Work</h3>
+    <h3>Blogs & Technical Writing</h3>
 
-    <div class="two-column">
-      <div class="info-card">
-        <h3><i class="fa-solid fa-code-branch"></i> CI/CD Pipeline Standardization</h3>
-        <ul>
-          <li>Standardized Jenkins and GitHub Actions pipelines across services.</li>
-          <li>Automated Docker image builds and deployments.</li>
-          <li>Improved deployment consistency across environments.</li>
-        </ul>
-      </div>
-
-      <div class="info-card">
-        <h3><i class="fa-solid fa-heart-pulse"></i> Production Monitoring & Incidents</h3>
-        <ul>
-          <li>Implemented CloudWatch monitoring and alerts.</li>
-          <li>Handled production incidents and RCA.</li>
-          <li>Maintained operational documentation.</li>
-        </ul>
-      </div>
+    <div class="info-card blog-card">
+      <span class="blog-badge">Medium</span>
+      <h4 class="blog-title">
+        How I Grew Into a DevOps Engineer — A Personal Career Story
+      </h4>
+      <p class="blog-desc">
+        A personal reflection on my three-year DevOps journey, focusing on ownership,
+        real production incidents, CI/CD reliability, and building automation teams trust.
+      </p>
+      <a href="https://medium.com/@pandisriharsha/how-i-grew-into-a-devops-engineer-a-personal-career-story-897d2bd50185" target="_blank" class="blog-link">
+        Read on Medium →
+      </a>
     </div>
   </div>
 </section>
@@ -218,21 +193,6 @@
 
 <footer class="footer">© 2025 Pandi Sri Harsha</footer>
 
-<script>
-const lines=[
-"$ whoami",
-"pandi-sri-harsha",
-"",
-"$ status",
-"actively-looking-for-devops-engineer-roles",
-"",
-"$ github",
-"github.com/sriharsha7272-dev"
-];
-let i=0,j=0,el=document.getElementById("terminal-text");
-function type(){if(i<lines.length){if(j<lines[i].length){el.textContent+=lines[i][j++];setTimeout(type,40);}else{el.textContent+="\n";j=0;i++;setTimeout(type,160);}}}
-type();
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
