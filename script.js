@@ -1,6 +1,11 @@
-const terminal = document.getElementById("terminal-text");
+const terminal = document.getElementById("terminal");
+const terminalText = document.getElementById("terminal-text");
 
-if (terminal) {
+const LINKEDIN = "https://www.linkedin.com/in/sri-harsha-3b375b304/";
+
+if (terminal && terminalText) {
+  terminalText.textContent = "";
+
   const lines = [
     "$ whoami",
     "sriharsha-devops",
@@ -16,27 +21,43 @@ if (terminal) {
     "$ terraform apply",
     "Apply complete! Infrastructure up-to-date.",
     "",
-    "$ echo \"LinkedIn: https://www.linkedin.com/in/sri-harsha-3b375b304/\"",
-    "LinkedIn: https://www.linkedin.com/in/sri-harsha-3b375b304/",
-    "",
-    "$ echo \"Production stable\""
+    "$ copy-linkedin",
+    "Click terminal to copy LinkedIn URL",
+    ""
   ];
 
   let l = 0, c = 0;
 
+  function scroll() {
+    terminal.scrollTop = terminal.scrollHeight;
+  }
+
   function type() {
     if (l < lines.length) {
       if (c < lines[l].length) {
-        terminal.textContent += lines[l][c++];
+        terminalText.textContent += lines[l][c++];
+        scroll();
         setTimeout(type, 35);
       } else {
-        terminal.textContent += "\n";
-        c = 0;
-        l++;
+        terminalText.textContent += "\n";
+        c = 0; l++;
+        scroll();
         setTimeout(type, 300);
       }
     }
   }
+
+  terminal.addEventListener("click", () => {
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(LINKEDIN).then(() => {
+        terminalText.textContent += "\nLinkedIn copied ✔\n";
+        scroll();
+      });
+    } else {
+      terminalText.textContent += "\n" + LINKEDIN + "\n";
+      scroll();
+    }
+  });
 
   type();
 }

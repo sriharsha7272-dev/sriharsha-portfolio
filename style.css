@@ -10,10 +10,7 @@ body {
   color: #e5e7eb;
 }
 
-a {
-  color: #38bdf8;
-  text-decoration: none;
-}
+a { color: #38bdf8; text-decoration: none; }
 
 .container {
   max-width: 1100px;
@@ -60,8 +57,23 @@ a {
   border-radius: 12px;
   padding: 16px;
   font-family: monospace;
-  min-height: 240px;
+  min-height: 260px;
   color: #38bdf8;
+  overflow-y: auto;
+}
+
+.terminal pre {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
 }
 
 /* METRICS */
@@ -80,9 +92,12 @@ a {
 
 .metric-card strong {
   font-size: 28px;
-  display: block;
   color: #38bdf8;
 }
+
+/* SECTIONS */
+.section { margin-top: 80px; }
+h3 { font-size: 26px; margin-bottom: 20px; }
 
 /* SKILLS + EXPERIENCE */
 .skills-experience-grid {
@@ -107,21 +122,11 @@ a {
 }
 
 /* EXPERIENCE */
-.job p {
-  color: #94a3b8;
-  margin: 6px 0 10px;
-}
+.job p { color: #94a3b8; margin: 6px 0 10px; }
+.job ul { padding-left: 18px; }
+.job li { margin-bottom: 8px; color: #cbd5f5; }
 
-.job ul {
-  padding-left: 18px;
-}
-
-.job li {
-  margin-bottom: 8px;
-  color: #cbd5f5;
-}
-
-/* BLOGS */
+/* BLOG */
 .blog-card {
   border: 1px solid #1e293b;
   border-radius: 12px;
@@ -129,9 +134,7 @@ a {
 }
 
 /* CONTACT */
-#contact p {
-  margin-bottom: 10px;
-}
+#contact p { margin-bottom: 10px; }
 
 /* FOOTER */
 .footer {
