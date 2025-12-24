@@ -1,4 +1,3 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +5,6 @@
   font-family: system-ui, sans-serif;
 }
 
-/* BODY */
 body {
   color: #e5e7eb;
   background:
@@ -14,27 +12,23 @@ body {
     linear-gradient(180deg, #020617, #01030a);
 }
 
-/* LINKS */
 a {
   color: #38bdf8;
   text-decoration: none;
 }
 
-/* CONTAINER */
 .container {
   max-width: 1100px;
   margin: auto;
   padding: 60px 20px;
 }
 
-/* HERO */
 .hero-layout {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   gap: 40px;
 }
 
-/* NAME */
 .name-row {
   display: flex;
   align-items: center;
@@ -48,7 +42,6 @@ a {
   border: 2px solid #38bdf8;
 }
 
-/* HERO TEXT */
 .hero-content h1 {
   font-size: 44px;
 }
@@ -63,7 +56,6 @@ a {
   margin-top: 16px;
 }
 
-/* BUTTONS */
 .hero-buttons {
   margin-top: 24px;
   display: flex;
@@ -85,20 +77,6 @@ a {
   border: 1px solid #38bdf8;
 }
 
-/* TERMINAL */
-.terminal {
-  background: #020617;
-  border: 1px solid #1e293b;
-  border-radius: 14px;
-}
-
-.terminal-body {
-  padding: 14px;
-  font-family: monospace;
-  color: #38bdf8;
-}
-
-/* SECTIONS */
 .section {
   margin-top: 80px;
 }
@@ -108,7 +86,6 @@ h3 {
   margin-bottom: 24px;
 }
 
-/* INFO CARD */
 .info-card {
   border: 1px solid #1e293b;
   border-radius: 14px;
@@ -116,7 +93,44 @@ h3 {
   background: #020617;
 }
 
-/* BLOG */
+/* SKILLS + EXPERIENCE */
+.skills-experience-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 48px;
+}
+
+.skills-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.skill-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+}
+
+.skill-card i {
+  color: #38bdf8;
+}
+
+.job ul {
+  margin-top: 12px;
+  padding-left: 18px;
+}
+
+.job li {
+  margin-bottom: 8px;
+  color: #cbd5f5;
+}
+
 .blog-badge {
   display: inline-block;
   background: rgba(56,189,248,0.15);
@@ -127,26 +141,26 @@ h3 {
   margin-bottom: 10px;
 }
 
-.blog-title {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
 .blog-desc {
   color: #cbd5f5;
   margin-bottom: 12px;
 }
 
-/* CTA */
 .cta {
   border: 1px dashed #38bdf8;
   padding: 20px;
   text-align: center;
 }
 
-/* FOOTER */
 .footer {
   text-align: center;
   color: #64748b;
   margin: 60px 0;
+}
+
+@media (max-width: 900px) {
+  .hero-layout,
+  .skills-experience-grid {
+    grid-template-columns: 1fr;
+  }
 }

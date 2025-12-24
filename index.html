@@ -20,7 +20,7 @@
   <!-- STYLES -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- FONT AWESOME -->
+  <!-- ICONS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 
@@ -53,19 +53,9 @@
 
     <div class="abstract-visual">
       <div class="terminal">
-        <div class="terminal-header">
-          <span></span><span></span><span></span>
-          <span class="terminal-title">Terminal</span>
-        </div>
         <div class="terminal-body">
-<pre><code id="terminal-text"></code><span class="cursor">█</span></pre>
+          <pre><code id="terminal-text"></code><span class="cursor">█</span></pre>
         </div>
-      </div>
-
-      <div class="pipeline">
-        <div class="stage">Build</div>
-        <div class="stage">Test</div>
-        <div class="stage">Deploy</div>
       </div>
     </div>
 
@@ -101,59 +91,61 @@
   </div>
 </section>
 
-<!-- CORE SKILLS -->
+<!-- SKILLS + EXPERIENCE -->
 <section class="section">
-  <div class="container">
-    <h3>Core Skills</h3>
+  <div class="container skills-experience-grid">
 
-    <h4 class="skill-group-title"><i class="fa-solid fa-cloud"></i> Cloud</h4>
-    <div class="skills-cards">
-      <div class="skill-card"><i class="fa-brands fa-aws"></i><span>AWS</span></div>
-      <div class="skill-card"><i class="fa-solid fa-server"></i><span>EC2</span></div>
-      <div class="skill-card"><i class="fa-solid fa-database"></i><span>S3</span></div>
-      <div class="skill-card"><i class="fa-solid fa-user-shield"></i><span>IAM</span></div>
-      <div class="skill-card"><i class="fa-solid fa-chart-simple"></i><span>CloudWatch</span></div>
+    <!-- SKILLS -->
+    <div>
+      <h3>Core Skills</h3>
+
+      <h4 class="skill-group-title"><i class="fa-solid fa-cloud"></i> Cloud</h4>
+      <div class="skills-cards">
+        <div class="skill-card"><i class="fa-brands fa-aws"></i>AWS</div>
+        <div class="skill-card"><i class="fa-solid fa-server"></i>EC2</div>
+        <div class="skill-card"><i class="fa-solid fa-database"></i>S3</div>
+        <div class="skill-card"><i class="fa-solid fa-user-shield"></i>IAM</div>
+        <div class="skill-card"><i class="fa-solid fa-chart-simple"></i>CloudWatch</div>
+      </div>
+
+      <h4 class="skill-group-title"><i class="fa-solid fa-arrows-rotate"></i> CI / CD</h4>
+      <div class="skills-cards">
+        <div class="skill-card"><i class="fa-brands fa-jenkins"></i>Jenkins</div>
+        <div class="skill-card"><i class="fa-brands fa-github"></i>GitHub Actions</div>
+        <div class="skill-card"><i class="fa-brands fa-docker"></i>Docker</div>
+        <div class="skill-card"><i class="fa-solid fa-dharmachakra"></i>Kubernetes</div>
+        <div class="skill-card"><i class="fa-solid fa-cubes"></i>Terraform</div>
+      </div>
+
+      <h4 class="skill-group-title"><i class="fa-solid fa-gears"></i> Operations</h4>
+      <div class="skills-cards">
+        <div class="skill-card"><i class="fa-solid fa-play"></i>Ansible</div>
+        <div class="skill-card"><i class="fa-brands fa-linux"></i>Linux</div>
+        <div class="skill-card"><i class="fa-solid fa-terminal"></i>Bash</div>
+        <div class="skill-card"><i class="fa-solid fa-ticket"></i>ServiceNow</div>
+      </div>
     </div>
 
-    <h4 class="skill-group-title"><i class="fa-solid fa-arrows-rotate"></i> CI / CD</h4>
-    <div class="skills-cards">
-      <div class="skill-card"><i class="fa-brands fa-jenkins"></i><span>Jenkins</span></div>
-      <div class="skill-card"><i class="fa-brands fa-github"></i><span>GitHub Actions</span></div>
-      <div class="skill-card"><i class="fa-brands fa-docker"></i><span>Docker</span></div>
-      <div class="skill-card"><i class="fa-solid fa-dharmachakra"></i><span>Kubernetes</span></div>
-      <div class="skill-card"><i class="fa-solid fa-cubes"></i><span>Terraform</span></div>
+    <!-- EXPERIENCE -->
+    <div>
+      <h3>Experience</h3>
+      <div class="job">
+        <strong>DevOps Engineer — Mogo Mantra Pvt Ltd</strong>
+        <p>March 2022 – Present | Hyderabad</p>
+        <ul>
+          <li>Designed and maintained CI/CD pipelines using Jenkins and GitHub Actions.</li>
+          <li>Managed AWS infrastructure (EC2, IAM, VPC, S3, CloudWatch).</li>
+          <li>Containerized applications using Docker.</li>
+          <li>Handled production incidents and RCA.</li>
+          <li>Worked with ServiceNow for ITSM workflows.</li>
+        </ul>
+      </div>
     </div>
 
-    <h4 class="skill-group-title"><i class="fa-solid fa-gears"></i> Operations</h4>
-    <div class="skills-cards">
-      <div class="skill-card"><i class="fa-solid fa-play"></i><span>Ansible</span></div>
-      <div class="skill-card"><i class="fa-brands fa-linux"></i><span>Linux</span></div>
-      <div class="skill-card"><i class="fa-solid fa-terminal"></i><span>Bash</span></div>
-      <div class="skill-card"><i class="fa-solid fa-ticket"></i><span>ServiceNow</span></div>
-    </div>
   </div>
 </section>
 
-<!-- EXPERIENCE -->
-<section class="section">
-  <div class="container">
-    <h3>Experience</h3>
-
-    <div class="job">
-      <strong>DevOps Engineer — Mogo Mantra Pvt Ltd</strong>
-      <p>March 2022 – Present | Hyderabad</p>
-      <ul>
-        <li>Designed and maintained CI/CD pipelines using Jenkins and GitHub Actions.</li>
-        <li>Managed AWS infrastructure (EC2, IAM, VPC, S3, CloudWatch).</li>
-        <li>Containerized applications using Docker.</li>
-        <li>Handled production incidents and RCA.</li>
-        <li>Worked with ServiceNow for ITSM workflows.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- BLOGS -->
+<!-- BLOG -->
 <section class="section">
   <div class="container">
     <h3>Blogs & Technical Writing</h3>
@@ -165,9 +157,9 @@
       </h4>
       <p class="blog-desc">
         A personal reflection on my three-year DevOps journey, focusing on ownership,
-        real production incidents, CI/CD reliability, and building automation teams trust.
+        real production incidents, CI/CD reliability, and automation.
       </p>
-      <a href="https://medium.com/@pandisriharsha/how-i-grew-into-a-devops-engineer-a-personal-career-story-897d2bd50185" target="_blank" class="blog-link">
+      <a href="https://medium.com/@pandisriharsha/how-i-grew-into-a-devops-engineer-a-personal-career-story-897d2bd50185" target="_blank">
         Read on Medium →
       </a>
     </div>
